@@ -10,7 +10,7 @@ def nq_na():
   with open('list.json', encoding='utf-8') as q:
     json_object = json.load(q)
   
-  a = random.randrange(1, 5) # 1 이상 5 미만
+  a = random.randrange(1, 10) # 1 이상 10 미만
   return json_object[str(a)] # json 파일에서는 name이 전부 str이니까
 
 @app.route('/mbti/<num>')
